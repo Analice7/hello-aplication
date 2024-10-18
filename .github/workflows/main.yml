@@ -22,7 +22,6 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v6
       with:
-        context: .
+        context: ./hello-app
         file: ./hello-app/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/hello-app:latest
