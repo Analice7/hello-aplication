@@ -25,3 +25,4 @@ jobs:
         context: ./hello-app
         file: ./hello-app/Dockerfile
         push: true
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/hello-app:latest
